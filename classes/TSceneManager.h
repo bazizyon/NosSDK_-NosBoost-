@@ -13,7 +13,9 @@ struct TSceneManager : TObject {
     uint32_t unknownPtr2;       // 0x18
     uint32_t unknownPtr3;       // 0x1C
     MapGrid* mapGrid;           // 0x20
-    char pad_0014[8];           // 0x24
+    uint32_t totalFrameCount;   // 0x24
+    bool isPlayerLoaded;        // 0x28
+    char pad_0025[3];           // 0x29
     int32_t playerID;           // 0x2C
     uint32_t mapPlayerObjPtr;   // 0x30
     char pad_0034[32];          // 0x34
