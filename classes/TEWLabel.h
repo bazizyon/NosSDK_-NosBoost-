@@ -34,8 +34,8 @@ struct TEWLabel : TEWControlWidgetEX {
     Color shadowColor;      // 0x78
     uint8_t textAlignment;  // 0x7C
     char pad1[3];           // 0x7D
-    int16_t x;              // 0X80
-    int16_t y;              // 0X82
+    int16_t xPosition;      // 0X80
+    int16_t yPosition;      // 0X82
     int16_t pxPerLine;      // 0X84
     int16_t lineSpacing;    // 0X86
     wchar_t* labelText;     // 0x88
@@ -52,8 +52,8 @@ struct TEWLabel : TEWControlWidgetEX {
         , textColor(255, 255, 255, 255)
         , shadowColor(255, 0, 0, 0)
         , textAlignment(3)
-        , x(1)
-        , y(6)
+        , xPosition(1)
+        , yPosition(6)
         , pxPerLine(98)
         , lineSpacing(0)
         , labelText(nullptr)
