@@ -35,7 +35,7 @@ struct TEWCustomButtonWidget : TEWCustomPanelWidget {
         , callback3(0)
         , arguments3(0)
     {
-        drawMode = 4;
+        drawMode = 0;
         memset(pad_ac, 0, sizeof(pad_ac));
         memset(pad_b2, 0, sizeof(pad_b2));
         memset(pad_cb, 0, sizeof(pad_cb));
