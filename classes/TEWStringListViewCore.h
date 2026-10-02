@@ -1,5 +1,6 @@
 #pragma once
 #include "TEWLabels.h"
+#include "TStringList.h"
 #pragma pack(push, 1)
 
 struct TEWStringListViewCore : TEWLabels {
@@ -13,6 +14,10 @@ struct TEWStringListViewCore : TEWLabels {
     uintptr_t unknown2;                 // 0xAC some list
     uintptr_t unknown3;                 // 0xB0 some list
     uint32_t unknown4;                  // 0xB4
+
+    [[nodiscard]] const TStringList* Lines() const {
+        return reinterpret_cast<const TStringList*>(stringList1);
+    }
 
     static constexpr auto ClassName = "TEWStringListViewCore";
     static constexpr uint32_t ExpectedSize = 0xB8;
