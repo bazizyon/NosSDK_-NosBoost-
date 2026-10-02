@@ -3,7 +3,7 @@
 #include "TEWControlWidgetEX.h"
 #define NOMINMAX
 #include <windows.h>
-#include <oleauto.h> // BSTR / SysAllocString -- link oleaut32 (see NosBoostRuntime/CMakeLists.txt)
+#include <oleauto.h>
 #pragma pack(push, 1)
 
 inline void WStrAsg_call(void* dest, void* src) {
