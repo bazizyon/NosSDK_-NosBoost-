@@ -18,7 +18,7 @@ struct TSceneManager : TObject {
     bool isPlayerLoaded;            // 0x28
     char pad_0025[3];               // 0x29
     int32_t playerID;               // 0x2C
-    TMapPlayerObj mapPlayerObjPtr;  // 0x30
+    TMapPlayerObj* mapPlayerObjPtr; // 0x30
     char pad_0034[32];              // 0x34
     int16_t targetSkillX;           // 0x54
     int16_t targetSkillY;           // 0x56
