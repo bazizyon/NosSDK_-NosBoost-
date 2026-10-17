@@ -3,7 +3,7 @@
 namespace Packet {
     class RBossPacket {
     public:
-        static constexpr const char* Header = "r_boss";
+        static constexpr const char* Header = "rboss";
 
         int entityType = 0;
         long entityID = 0;
