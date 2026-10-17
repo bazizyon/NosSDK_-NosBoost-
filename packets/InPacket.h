@@ -2,6 +2,7 @@
 #include "EntityType.h"
 #include "sub/InPlayerSubPacket.h"
 #include <string>
+#include <vector>
 
 namespace Packet {
     class InPacket {
@@ -18,5 +19,6 @@ namespace Packet {
         InPlayerSubPacket inPlayerSubPacket;
         // InItemSubPacket
         // InNonPlayerSubPacket inNonPlayerSubPacket;
+        std::vector<std::string> fields;
     };
 }
